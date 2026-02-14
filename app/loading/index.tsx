@@ -4,7 +4,9 @@ import React from "react";
 export default function LoadingScreen() {
   return (
     <View>
-      <Text>LoadingScreen</Text>
+      <Text style={{
+        color:'white'
+      }}>loadingscreen</Text>
     </View>
   );
 }

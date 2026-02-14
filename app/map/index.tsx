@@ -4,7 +4,9 @@ import React from "react";
 export default function MappScreen() {
   return (
     <View>
-      <Text>MappScreen</Text>
+      <Text style={{
+        color:'white'
+      }}>MappScreen</Text>
     </View>
   );
 }
