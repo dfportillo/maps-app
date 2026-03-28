@@ -11,12 +11,13 @@ interface PermissionsState {
 
 export const usePermissionsStore = create<PermissionsState>()((set) => ({
   locationStatus: PermissionsStatus.CHECKING,
+
   requestLocationPermission: async () => {
     const status = await requestLocationPermission()
     set({locationStatus: status})
-
     return status
   },
+  
   checkLocationPermission: async () => {
     const stauts = await checkLocationPermission()
     set({locationStatus: stauts})

@@ -19,11 +19,9 @@ export default function RootLayout() {
             headerShown:false
           }}
         >
-          <Stack.Screen name="loading/index" options={{ animation: "none" }} />
           <Stack.Screen name="map/index" options={{ animation: "none" }} />
-          <Stack.Screen
-            name="permissions/index"
-            options={{ animation: "none" }}
+          <Stack.Screen name="loading/index" options={{ animation: "none" }} />
+          <Stack.Screen name="permissions/index" options={{ animation: "none" }}
           />
         </Stack>
       </ThemeProvider>

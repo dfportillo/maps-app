@@ -1,5 +1,5 @@
-import { View, Text, StyleSheet } from "react-native";
-import MapView from "react-native-maps";
+import { View, StyleSheet } from "react-native";
+import MapView, { Marker, PROVIDER_GOOGLE } from "react-native-maps";
 import React from "react";
 
 export default function MappScreen() {
@@ -7,6 +7,7 @@ export default function MappScreen() {
     <View style={styles.conteiner}>
       <MapView
         style={styles.map}
+        provider={PROVIDER_GOOGLE}
         initialRegion={{
           //8.268225, -62.759109
           latitude: 8.268225,
@@ -26,8 +27,9 @@ const styles = StyleSheet.create({
     alignItems: "center",
   },
   map: {
-    width: "100%",
-    height: "100%",
+    // width: "100%",
+    // height: "100%",
     // backgroundColor:'blue',
+    ...StyleSheet.absoluteFillObject,
   },
 });

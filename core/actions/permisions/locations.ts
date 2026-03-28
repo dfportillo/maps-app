@@ -5,7 +5,7 @@ import { Alert, Linking } from "react-native";
 
 export const requestLocationPermission =
   async (): Promise<PermissionsStatus> => {
-    const { status } = await Location.requestForegroundPermissionsAsync();
+    const { status } = await Location.requestForegroundPermissionsAsync(); // informacion de permisologia general de la App
     if (status !== "granted") {
       if(status === 'denied'){
         manualPermissionRequest()
